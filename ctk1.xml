@@ -1,11 +1,38 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="math_random" id="97" x="-364" y="11"></block>
-  <block type="movement_forward" id="36" x="303" y="-8">
+  <block type="movement_forward" id="36" x="269" y="-3">
     <next>
-      <block type="movement_stop" id="113"></block>
+      <block type="robot_delay" id="115" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="171">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stutter" id="132">
+            <next>
+              <block type="controls_repeat" id="122" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="231">
+                    <field name="NUM">4</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_leftmotor" id="241" inline="true">
+                    <value name="MOVLEFT">
+                      <block type="math_number" id="248">
+                        <field name="NUM">3000</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
-  <block type="movement_forward" id="57" x="-136" y="17"></block>
   <block type="led_select" id="66" inline="true" x="-210" y="56">
     <field name="ACTION">FLASH</field>
     <next>
@@ -14,5 +41,5 @@
       </block>
     </next>
   </block>
-  <block type="movement_left" id="47" x="-94" y="74"></block>
+  <block type="movement_left" id="47" x="643" y="532"></block>
 </xml>
