@@ -8,7 +8,18 @@
           </block>
         </value>
         <next>
-          <block type="movement_stutter" id="339"></block>
+          <block type="movement_stutter" id="339">
+            <next>
+              <block type="led_select" id="366" inline="true">
+                <field name="ACTION">ON</field>
+                <value name="LED">
+                  <block type="math_number" id="373">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
