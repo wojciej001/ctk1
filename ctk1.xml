@@ -1,11 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="36" x="303" y="-8">
     <next>
-      <block type="led_select" id="66" inline="true">
-        <field name="ACTION">FLASH</field>
+      <block type="multimedia_playwav" id="90">
+        <field name="WAV">1</field>
       </block>
     </next>
   </block>
   <block type="movement_forward" id="57" x="-136" y="17"></block>
+  <block type="led_select" id="66" inline="true" x="-210" y="56">
+    <field name="ACTION">FLASH</field>
+  </block>
   <block type="movement_left" id="47" x="-94" y="74"></block>
 </xml>
