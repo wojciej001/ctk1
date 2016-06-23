@@ -9,7 +9,11 @@
           </block>
         </value>
         <next>
-          <block type="movement_stutter" id="132"></block>
+          <block type="movement_stop" id="260">
+            <next>
+              <block type="movement_stutter" id="132"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
