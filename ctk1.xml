@@ -2,7 +2,7 @@
   <block type="movement_forward" id="36" x="303" y="-8">
     <next>
       <block type="led_select" id="66" inline="true">
-        <field name="ACTION">ON</field>
+        <field name="ACTION">FLASH</field>
       </block>
     </next>
   </block>
