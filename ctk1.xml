@@ -1,3 +1,69 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_reverse" id="663" x="-50" y="-392"></block>
+  <block type="controls_repeat" id="967" inline="true" x="-188" y="-527">
+    <value name="TIMES">
+      <block type="math_number" id="974">
+        <field name="NUM">70</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_reverse" id="663">
+        <next>
+          <block type="robot_delay" id="781" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="800">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_left" id="843">
+                <next>
+                  <block type="robot_delay" id="887" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="894">
+                        <field name="NUM">5000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stutter" id="1003">
+                        <next>
+                          <block type="robot_delay" id="1026" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="1039">
+                                <field name="NUM">5000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_leftmotor" id="1074" inline="true">
+                                <value name="MOVLEFT">
+                                  <block type="math_number" id="1081">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="robot_delay" id="1099" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="1106">
+                                        <field name="NUM">5000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="1117"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
 </xml>
