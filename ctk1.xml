@@ -1,14 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_leftmotor" id="466" inline="true" x="-276" y="-433">
-    <value name="MOVLEFT">
-      <block type="math_number" id="479">
-        <field name="NUM">2000</field>
-      </block>
-    </value>
-    <next>
-      <block type="movement_reverse" id="511"></block>
-    </next>
-  </block>
   <block type="movement_forward" id="36" x="-90" y="-434">
     <next>
       <block type="movement_rightmotor" id="406" inline="true">
@@ -17,6 +7,18 @@
             <field name="NUM">4000</field>
           </block>
         </value>
+        <next>
+          <block type="movement_leftmotor" id="466" inline="true">
+            <value name="MOVLEFT">
+              <block type="math_number" id="479">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_reverse" id="511"></block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
