@@ -9,26 +9,7 @@
           </block>
         </value>
         <next>
-          <block type="movement_stutter" id="132">
-            <next>
-              <block type="controls_repeat" id="122" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="231">
-                    <field name="NUM">4</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="movement_leftmotor" id="241" inline="true">
-                    <value name="MOVLEFT">
-                      <block type="math_number" id="248">
-                        <field name="NUM">3000</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </next>
-          </block>
+          <block type="movement_stutter" id="132"></block>
         </next>
       </block>
     </next>
