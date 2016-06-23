@@ -1,32 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="math_random" id="97" x="-364" y="11"></block>
-  <block type="movement_forward" id="36" x="269" y="-3">
-    <next>
-      <block type="robot_delay" id="115" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="171">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
-        <next>
-          <block type="movement_stutter" id="132">
-            <next>
-              <block type="robot_delay" id="295" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="302">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_stop" id="328"></block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
-  </block>
+  <block type="movement_forward" id="36" x="269" y="-3"></block>
   <block type="led_select" id="66" inline="true" x="-210" y="56">
     <field name="ACTION">FLASH</field>
     <next>
